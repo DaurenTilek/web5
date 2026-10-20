@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 3 — Events</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="events.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Assignment 5</h1>
+    <p>Dauren Tilek | SE-2525</p>
+</header>
+
+<nav>
+    <a href="index.html">Part 1</a>
+    <a href="dom.html">Part 2</a>
+    <a href="events.html">Part 3</a>
+    <a href="todo.html">Part 4</a>
+</nav>
+
+<main>
+    <h2>Events</h2>
+
+    <section>
+        <h3>Task 5. Mouse Events</h3>
+
+        <div id="mouseBox" class="box">
+            Move your mouse over this box.
+        </div>
+    </section>
+
+    <section>
+        <h3>Task 6. Keyboard Events</h3>
+
+        <label for="textInput">Type something:</label>
+        <input id="textInput" type="text">
+
+        <p>Current value: <span id="currentValue"></span></p>
+    </section>
+
+    <section>
+        <h3>Task 7. Calculator</h3>
+
+        <form id="calculator">
+            <label for="firstNumber">First number</label>
+            <input id="firstNumber" type="number" step="any" required>
+
+            <label for="operation">Operation</label>
+            <select id="operation">
+                <option value="+">Addition (+)</option>
+                <option value="-">Subtraction (-)</option>
+                <option value="*">Multiplication (*)</option>
+                <option value="/">Division (/)</option>
+            </select>
+
+            <label for="secondNumber">Second number</label>
+            <input id="secondNumber" type="number" step="any" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <p id="result" aria-live="polite">Result: —</p>
+    </section>
+</main>
+
+</body>
+</html>
